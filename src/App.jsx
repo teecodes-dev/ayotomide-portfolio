@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import ProjectDetails from "./Pages/ProjectDetails";
 
-import Spotlight from "./components/Spotlight";
-import ScrollToTop from "./components/ScrollToTop";
+import Spotlight from "./Components/Spotlight";
+import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
   return (
