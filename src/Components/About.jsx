@@ -12,7 +12,7 @@ function About() {
   return (
     <section id="about" className="py-32 container-custom">
       <div className="grid lg:grid-cols-2 gap-16 items-center">
-        {/* LEFT SIDE */}
+        
         <motion.div
           initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -36,7 +36,7 @@ function About() {
             well-structured frontend development.
           </p>
 
-          {/* STATS */}
+          
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {stats.map((item, index) => (
               <motion.div
@@ -63,7 +63,7 @@ function About() {
           </div>
         </motion.div>
 
-        {/* RIGHT SIDE - PROFILE CARD */}
+        
         <motion.div
           initial={{ opacity: 0, x: 40 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -87,7 +87,7 @@ function About() {
               group
             "
           >
-            {/* IMAGE */}
+            
             <img
               src={heropic}
               alt="Ayotomide Adeyanju"
@@ -102,10 +102,10 @@ function About() {
               "
             />
 
-            {/* DARK OVERLAY FOR PREMIUM LOOK */}
+            
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20" />
 
-            {/* NAME CARD */}
+            
             <div className="absolute bottom-0 w-full p-6">
               <div className="bg-black/40 backdrop-blur-md rounded-xl p-4 border border-white/10">
                 <h3 className="text-xl font-bold">Adeyanju Ayotomide</h3>

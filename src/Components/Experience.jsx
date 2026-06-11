@@ -17,7 +17,7 @@ function Experience() {
 
   return (
     <section id="experience" className="py-32 container-custom">
-      {/* TITLE */}
+      
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -27,7 +27,7 @@ function Experience() {
         Experience
       </motion.h2>
 
-      {/* TIMELINE */}
+      
       <div className="relative border-l border-slate-800 pl-6 space-y-12">
         {experiences.map((exp, index) => (
           <motion.div
@@ -38,10 +38,10 @@ function Experience() {
             transition={{ delay: index * 0.2 }}
             className="relative"
           >
-            {/* DOT */}
+            
             <div className="absolute -left-[9px] top-2 w-4 h-4 bg-violet-500 rounded-full border-4 border-black" />
 
-            {/* CARD */}
+            
             <div className="bg-white/5 border border-white/10 rounded-xl p-6 hover:border-violet-500/40 transition">
               <h3 className="text-xl font-bold text-violet-400">{exp.role}</h3>
 

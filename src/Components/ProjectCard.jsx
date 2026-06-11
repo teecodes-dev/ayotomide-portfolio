@@ -14,7 +14,7 @@ function ProjectCard({ project }) {
       transition={{ type: "spring", stiffness: 200 }}
       className="group relative bg-slate-900 border border-slate-800 rounded-xl overflow-hidden cursor-pointer shadow-lg hover:shadow-violet-500/20"
     >
-      {/* Image */}
+      
       <div className="overflow-hidden">
         <img
           src={project.image}
@@ -23,13 +23,13 @@ function ProjectCard({ project }) {
         />
       </div>
 
-      {/* Content */}
+      
       <div className="p-5">
         <h3 className="text-xl font-bold mb-2">{project.title}</h3>
 
         <p className="text-slate-400 text-sm mb-4">{project.description}</p>
 
-        {/* Tech Stack */}
+        
         <div className="flex flex-wrap gap-2 mb-4">
           {project.tech.map((tech, index) => (
             <span
@@ -41,7 +41,7 @@ function ProjectCard({ project }) {
           ))}
         </div>
 
-        {/* Buttons */}
+        
         <div className="flex justify-between items-center">
           <button
             onClick={() => navigate(`/project/${project.id}`)}
@@ -61,7 +61,7 @@ function ProjectCard({ project }) {
         </div>
       </div>
 
-      {/* Glow effect */}
+      
       <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-gradient-to-r from-violet-500/10 to-blue-500/10 pointer-events-none" />
     </motion.div>
   );

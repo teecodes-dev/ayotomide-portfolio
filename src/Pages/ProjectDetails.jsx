@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { projects } from "../data/projects";
 import { motion } from "framer-motion";
 import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
 
 function ProjectDetails() {
   const { id } = useParams();
@@ -18,9 +19,9 @@ function ProjectDetails() {
 
   return (
     <>
-    <Navbar />
+      <Navbar />
       <div className="min-h-screen py-24 container-custom text-white">
-        {/* HERO SECTION */}
+        
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -38,7 +39,7 @@ function ProjectDetails() {
 
           <p className="text-slate-400 text-lg mb-6">{project.description}</p>
 
-          {/* CTA BUTTONS */}
+          
           <div className="flex gap-4 mb-12">
             <a
               href={project.live}
@@ -58,7 +59,7 @@ function ProjectDetails() {
           </div>
         </motion.div>
 
-        {/* OVERVIEW */}
+        
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -72,7 +73,7 @@ function ProjectDetails() {
           </p>
         </motion.div>
 
-        {/* FEATURES */}
+        
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -93,7 +94,7 @@ function ProjectDetails() {
           </div>
         </motion.div>
 
-        {/* TECH STACK */}
+        
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -113,12 +114,12 @@ function ProjectDetails() {
           </div>
         </motion.div>
 
-        {/* FINAL CTA */}
+        
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="mt-20 text-center border-t border-slate-800 pt-12"
+          className="mt-20 text-center border-t border-slate-800 pt-20"
         >
           <h3 className="text-2xl font-bold mb-4">Like this project?</h3>
 
@@ -145,6 +146,7 @@ function ProjectDetails() {
           </div>
         </motion.div>
       </div>
+      <Footer />
     </>
   );
 }

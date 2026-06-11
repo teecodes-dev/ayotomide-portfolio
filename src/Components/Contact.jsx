@@ -20,7 +20,6 @@ function Contact() {
     setForm({ ...form, file: e.target.files[0] });
   };
 
-  // EMAIL (mailto fallback)
   const handleEmailSend = (e) => {
     e.preventDefault();
 
@@ -42,7 +41,7 @@ ${form.file ? `Attachment: ${form.file.name}` : ""}
     )}&body=${encodeURIComponent(body)}`;
   };
 
-  // WHATSAPP
+  
   const handleWhatsAppSend = () => {
     const message = `
 Hello Ayotomide 👋
@@ -64,7 +63,7 @@ ${form.message}
 
   return (
     <section id="contact" className="py-32 container-custom">
-      {/* HEADER */}
+      
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -77,16 +76,16 @@ ${form.message}
         </p>
       </motion.div>
 
-      {/* GRID */}
+      
       <div className="grid md:grid-cols-2 gap-10">
-        {/* FORM */}
+        
         <motion.form
           onSubmit={handleEmailSend}
           initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
           className="space-y-4 bg-white/5 border border-white/10 p-6 rounded-xl"
         >
-          {/* NAME */}
+          
           <input
             type="text"
             name="name"
@@ -96,7 +95,7 @@ ${form.message}
             className="w-full p-3 bg-slate-900 border border-slate-700 rounded-lg outline-none"
           />
 
-          {/* EMAIL */}
+          
           <input
             type="email"
             name="email"
@@ -106,7 +105,7 @@ ${form.message}
             className="w-full p-3 bg-slate-900 border border-slate-700 rounded-lg outline-none"
           />
 
-          {/* SUBJECT */}
+          
           <input
             type="text"
             name="subject"
@@ -116,7 +115,7 @@ ${form.message}
             className="w-full p-3 bg-slate-900 border border-slate-700 rounded-lg outline-none"
           />
 
-          {/* MESSAGE (FIXED SIZE - NOT RESIZABLE) */}
+          
           <textarea
             name="message"
             placeholder="Your Message"
@@ -134,7 +133,7 @@ ${form.message}
             "
           />
 
-          {/* FILE UPLOAD */}
+         
           <div className="text-slate-400 text-sm">
             <label className="block mb-1">Attach File (optional)</label>
             <input
@@ -144,7 +143,7 @@ ${form.message}
             />
           </div>
 
-          {/* BUTTONS */}
+         
           <div className="grid grid-cols-2 gap-3 pt-2">
             <button
               type="submit"
@@ -181,7 +180,7 @@ ${form.message}
           </div>
         </motion.form>
 
-        {/* CONTACT LINKS */}
+        
         <motion.div
           initial={{ opacity: 0, x: 40 }}
           whileInView={{ opacity: 1, x: 0 }}

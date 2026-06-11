@@ -6,11 +6,14 @@ import Contact from '../Components/Contact';
 import TechStack from '../Components/TechStack';
 import FeaturedProjects from '../Components/FeaturedProjects';
 import Experience from '../Components/Experience';
+import Footer from '../Components/Footer';
+import ScrollIndicator from '../Components/ScrollIndicator';
 
 const Home = () => {
   return (
     <div>
       <Navbar />
+      <ScrollIndicator />
 
       <main>
         <Hero />
@@ -19,6 +22,7 @@ const Home = () => {
         <Experience />
         <FeaturedProjects />
         <Contact />
+        <Footer />
       </main>
     </div>
   );

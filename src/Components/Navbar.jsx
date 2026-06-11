@@ -1,48 +1,54 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
 
   const navLinks = [
-    { name: "About", href: "#about" },
-    { name: "Tech Stack", href: "#Tech Stack" },
-    { name: "Experience", href: "#experience" },
-    { name: "Featured Projects", href: "#Featured Projects" },
-    { name: "Contact", href: "#contact" },
+    { name: "About", id: "about" },
+    { name: "Skills", id: "skills" },
+    { name: "Experience", id: "experience" },
+    { name: "Projects", id: "projects" },
+    { name: "Contact", id: "contact" },
   ];
 
-  // 🔥 smooth scroll helper (important for logo + route safety)
   const handleScroll = (id) => {
-    const el = document.querySelector(id);
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth" });
+    const scrollToSection = () => {
+      const el = document.getElementById(id);
+      el?.scrollIntoView({ behavior: "smooth", block: "start" });
+    };
+
+    if (location.pathname !== "/") {
+      navigate("/");
+      setTimeout(scrollToSection, 150);
+    } else {
+      scrollToSection();
     }
+  };
+
+  const handleHome = () => {
+    navigate("/");
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
     <header className="fixed top-0 w-full z-50 backdrop-blur-md bg-black/30 border-b border-white/10">
       <div className="container-custom flex justify-between items-center py-4">
-        {/* LOGO → smooth scroll to top */}
-        <button
-          onClick={() => {
-            navigate("/");
-            window.scrollTo({ top: 0, behavior: "smooth" });
-          }}
-          className="text-2xl font-bold"
-        >
+        
+        <button onClick={handleHome} className="text-2xl font-bold">
           AA<span className="text-violet-500">.</span>
         </button>
 
-        {/* DESKTOP NAV */}
+        
         <nav className="hidden md:block">
           <ul className="flex items-center gap-8">
             {navLinks.map((link) => (
               <li key={link.name}>
                 <button
-                  onClick={() => handleScroll(link.href)}
+                  onClick={() => handleScroll(link.id)}
                   className="text-slate-300 hover:text-violet-500 transition"
                 >
                   {link.name}
@@ -52,7 +58,7 @@ function Navbar() {
           </ul>
         </nav>
 
-        {/* CV BUTTON */}
+        
         <a
           href="https://drive.google.com/file/d/1zqZDQ89q1PMKj_Rb5H0WbkDbvDEOvasm/view?usp=drivesdk"
           target="_blank"
@@ -62,13 +68,13 @@ function Navbar() {
           Download CV
         </a>
 
-        {/* MOBILE MENU BUTTON */}
+        
         <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
 
-      {/* MOBILE MENU */}
+      
       {isOpen && (
         <div className="md:hidden border-t border-slate-800 bg-slate-950">
           <ul className="flex flex-col p-6 gap-6">
@@ -76,10 +82,10 @@ function Navbar() {
               <li key={link.name}>
                 <button
                   onClick={() => {
-                    handleScroll(link.href);
+                    handleScroll(link.id);
                     setIsOpen(false);
                   }}
-                  className="text-slate-300 text-left"
+                  className="text-slate-300 text-left hover:text-violet-500 transition"
                 >
                   {link.name}
                 </button>
