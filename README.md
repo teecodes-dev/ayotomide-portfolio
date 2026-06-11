@@ -71,3 +71,4 @@ A fashion-focused e-commerce platform built for identity-driven shopping.
 This portfolio is built to showcase my frontend development skills, projects, and readiness for internship or junior developer roles.
 
 ---
+Updated deployment test
