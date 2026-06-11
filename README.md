@@ -1,16 +1,50 @@
-# React + Vite
+# 🚀 Ayotomide Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern frontend developer portfolio built to showcase my projects, skills, and experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🌐 Live Site
+Coming soon (or add Vercel link after deployment)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📌 Features
 
-## Expanding the ESLint configuration
+- Modern responsive UI
+- Animated hero section with typing effect
+- Project showcase with dynamic routing
+- Skills section with interactive layout
+- Contact form (Email + WhatsApp integration)
+- Framer Motion animations
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+- React.js
+- Tailwind CSS
+- Framer Motion
+- React Router DOM
+- Vite
+
+---
+
+## 📁 Projects Featured
+
+- BHD Auctions – Digital art auction platform
+- Two47 Store – Streetwear e-commerce platform
+
+---
+
+## 📫 Contact
+
+- Email: ayotomideadeyanju@gmail.com  
+- GitHub: https://github.com/teecodes-dev  
+- LinkedIn: https://ng.linkedin.com/in/adeyanju-ayotomide  
+
+---
+
+## ⚡ Purpose
+
+This project was built to present my frontend development skills and serve as a professional portfolio for job applications and collaborations.
