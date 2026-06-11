@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { projects } from "../data/projects";
+import { projects } from "../Data/projects";
 import { motion } from "framer-motion";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";

@@ -1,4 +1,4 @@
-import { projects } from "../data/projects";
+import { projects } from "../Data/projects";
 import ProjectCard from "./ProjectCard";
 
 function FeaturedProjects() {
