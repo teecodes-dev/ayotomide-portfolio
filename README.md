@@ -1,4 +1,4 @@
-# 🚀 Portfolio – Adeyanju Ayotomide
+#  Portfolio - Adeyanju Ayotomide
 
 My personal developer portfolio built with React.js and Tailwind CSS.  
 It showcases my skills, projects, and experience as a Frontend Developer.
@@ -71,5 +71,3 @@ A fashion-focused e-commerce platform built for identity-driven shopping.
 This portfolio is built to showcase my frontend development skills, projects, and readiness for internship or junior developer roles.
 
 ---
-
-⭐ If you like this project, feel free to check out my repositories!
