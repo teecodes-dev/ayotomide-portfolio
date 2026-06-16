@@ -7,12 +7,10 @@ function Hero() {
       id="hero"
       className="relative min-h-screen flex items-center overflow-hidden"
     >
-      
       <div className="absolute top-20 left-10 w-72 h-72 bg-violet-500/20 rounded-full blur-3xl animate-pulse" />
       <div className="absolute bottom-20 right-10 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl animate-pulse" />
 
       <div className="container-custom relative z-10 text-center">
-       
         <motion.p
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -21,7 +19,6 @@ function Hero() {
           Hi, I’m Adeyanju Ayotomide
         </motion.p>
 
-        
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -32,7 +29,6 @@ function Hero() {
           <span className="text-violet-500"> experiences</span>
         </motion.h1>
 
-       
         <div className="text-2xl md:text-4xl font-bold text-violet-500 mb-8 min-h-[60px]">
           <TypeAnimation
             sequence={[
@@ -51,7 +47,6 @@ function Hero() {
           />
         </div>
 
-        
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -63,7 +58,6 @@ function Hero() {
           real-world problem solving.
         </motion.p>
 
-       
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -85,7 +79,7 @@ function Hero() {
           </a>
 
           <a
-            href="https://drive.google.com/file/d/1zqZDQ89q1PMKj_Rb5H0WbkDbvDEOvasm/view?usp=drivesdk"
+            href="https://drive.google.com/file/d/1Qpn-S-uBd8n3GAASn8zrzBjzxjmHQiPL/view?usp=drivesdk"
             target="_blank"
             rel="noreferrer"
             className="border border-violet-500 hover:bg-violet-500 px-6 py-3 rounded-lg transition"

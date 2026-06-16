@@ -1,5 +1,6 @@
 import bhdpic from "../assets/Images/bhdpic.png";
 import two47pic from "../assets/Images/two47pic.png";
+import devfinderpic from "../assets/Images/devfinderpic.png";
 
 export const projects = [
   {
@@ -37,6 +38,25 @@ export const projects = [
       "Fashion-focused layout",
       "Responsive e-commerce design",
       "Modern component structure",
+    ],
+  },
+
+  {
+    id: "devfinder",
+    title: "DevFinder - GitHub Profile Explorer",
+    description:
+      "A modern GitHub user and repository explorer that allows users to search developers and view profiles in real time.",
+    longDescription:
+      "DevFinder is a GitHub-based developer discovery tool that lets users search for developers, view their profiles, and explore repositories. It uses the GitHub API to fetch real-time data and presents it in a clean, responsive UI built with React and Tailwind CSS.",
+    image: devfinderpic,
+    tech: ["React", "JavaScript", "Tailwind CSS", "GitHub API"],
+    live: "https://devfinder-io.vercel.app/",
+    github: "https://github.com/teecodes-dev/devfinder",
+    features: [
+      "Real-time GitHub user search",
+      "Repository exploration",
+      "Responsive developer dashboard UI",
+      "API-driven data rendering",
     ],
   },
 ];

@@ -8,9 +8,11 @@ function Experience() {
       period: "Jan 2026 – May 2026",
       points: [
         "Completed structured frontend development training focused on HTML, CSS, JavaScript, and React",
-        "Built real-world responsive web applications using React.js and Tailwind CSS",
-        "Worked with component-based architecture and reusable UI patterns",
-        "Improved problem-solving skills through hands-on project development",
+        "Built responsive web applications using React.js and Tailwind CSS with a focus on reusable components",
+        "Developed real-world projects including a GitHub profile explorer (DevFinder) using the GitHub REST API",
+        "Implemented API integration and asynchronous data fetching for dynamic user interfaces",
+        "Applied mobile-first responsive design principles to ensure cross-device compatibility",
+        "Deployed projects using Vercel and managed version control with Git and GitHub",
       ],
     },
   ];

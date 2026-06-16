@@ -48,6 +48,14 @@ A fashion-focused e-commerce platform built for identity-driven shopping.
 
 ---
 
+### 🔍 DevFinder – GitHub Profile Explorer
+A modern GitHub user and repository explorer that allows users to search developers, view profiles, and analyze repositories in real time using the GitHub API.
+
+- Live: https://devfinder-io.vercel.app/
+- GitHub: https://github.com/teecodes-dev/devfinder
+
+---
+
 ## 📸 Portfolio Preview
 
 > Add a screenshot of your portfolio below

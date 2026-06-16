@@ -37,12 +37,10 @@ function Navbar() {
   return (
     <header className="fixed top-0 w-full z-50 backdrop-blur-md bg-black/30 border-b border-white/10">
       <div className="container-custom flex justify-between items-center py-4">
-        
         <button onClick={handleHome} className="text-2xl font-bold">
           AA<span className="text-violet-500">.</span>
         </button>
 
-        
         <nav className="hidden md:block">
           <ul className="flex items-center gap-8">
             {navLinks.map((link) => (
@@ -58,9 +56,8 @@ function Navbar() {
           </ul>
         </nav>
 
-        
         <a
-          href="https://drive.google.com/file/d/1zqZDQ89q1PMKj_Rb5H0WbkDbvDEOvasm/view?usp=drivesdk"
+          href="https://drive.google.com/file/d/1Qpn-S-uBd8n3GAASn8zrzBjzxjmHQiPL/view?usp=drivesdk"
           target="_blank"
           rel="noreferrer"
           className="hidden md:flex items-center border border-violet-500 px-5 py-2 rounded-lg hover:bg-violet-500 transition"
@@ -68,13 +65,11 @@ function Navbar() {
           Download CV
         </a>
 
-        
         <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
 
-      
       {isOpen && (
         <div className="md:hidden border-t border-slate-800 bg-slate-950">
           <ul className="flex flex-col p-6 gap-6">
